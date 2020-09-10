@@ -1,29 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "/home/meterian/workspace/sample.csproj": {}
+    "/tmp/dotnet-sample-project/sample.csproj": {}
   },
   "projects": {
-    "/home/meterian/workspace/sample.csproj": {
+    "/tmp/dotnet-sample-project/sample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/meterian/workspace/sample.csproj",
+        "projectUniqueName": "/tmp/dotnet-sample-project/sample.csproj",
         "projectName": "sample",
-        "projectPath": "/home/meterian/workspace/sample.csproj",
-        "packagesPath": "/home/meterian/.nuget/packages/",
-        "outputPath": "/home/meterian/workspace/obj/",
+        "projectPath": "/tmp/dotnet-sample-project/sample.csproj",
+        "packagesPath": "/home/bbossola/.nuget/packages/",
+        "outputPath": "/tmp/dotnet-sample-project/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/meterian/.nuget/NuGet/NuGet.Config"
+          "/home/bbossola/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.0.9"
+          "netcoreapp3.1"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.0.9": {
+          "netcoreapp3.1": {
             "projectReferences": {}
           }
         },
@@ -34,14 +34,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.0.9": {
+        "netcoreapp3.1": {
           "dependencies": {
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.0.9, )",
-              "autoReferenced": true
-            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[9.0.1, )"
@@ -57,7 +51,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
         }
       }
     }
