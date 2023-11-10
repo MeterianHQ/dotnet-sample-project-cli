@@ -6,6 +6,7 @@ jobs:
     meterian_scan:
         name: Meterian client scan
         runs-on: ubuntu-latest
+        
         steps: 
           - name: Checkout (official GitHub action)
             uses: actions/checkout@v3
